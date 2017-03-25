@@ -1,9 +1,9 @@
 The HTML5 Up "[Striped](https://html5up.net/striped)" theme, modified for Pelican (http://getpelican.com).  
 Plugins needed: [neighbors](https://github.com/getpelican/pelican-plugins/tree/master/neighbors).  
-See it in action at [G not C](http://gnotc.com). 
-
-![](https://github.com/aroaminggeek/pelican-striped/blob/master/screenshot.png)
-
+ 
+![](https://github.com/aroaminggeek/pelican-striped/blob/master/screenshot.png)  
+See it in action at [G not C](http://gnotc.com):  
+![](https://github.com/aroaminggeek/pelican-striped/blob/master/screenshot.png)  
 Striped by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the [CCA 3.0](https://creativecommons.org/licenses/by/3.0/) license (html5up.net/license)
