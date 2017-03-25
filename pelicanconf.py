@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'G'
-SITENAME = 'G not C.'
-SITESUBTITLE = 'It\'s G, not C.'
-SITEURL = 'http://gnotc.com'
+AUTHOR = ''
+SITENAME = ''
+SITESUBTITLE = ''
+SITEURL = 'localhost'
 
 PATH = 'content'
 
-TIMEZONE = 'America/Phoenix'
+TIMEZONE = 'UTC'
 
 DEFAULT_LANG = 'en'
 DEFAULT_DATE_FORMAT = '%B %d, %Y'
@@ -34,14 +34,8 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
-THEME = '/Volumes/EXT/Projects/gnotc.com/theme'
+#THEME = ''
 STATIC_PATHS = ['images']
-PLUGIN_PATHS = ['/Volumes/EXT/Projects/pelican-plugins']
 PLUGINS = ['neighbors']
-ARTICLE_URL = 'entry/{slug}' #remove html before live
-ARTICLE_SAVE_AS = 'entry/{slug}.html'
-PAGE_URL = '{slug}'
-PAGE_SAVE_AS = '{slug}.html'
-PAGE_PATHS = ['pages']
-DIRECT_TEMPLATES = ["index","about","archives","no-comment","kc"]
+
 
