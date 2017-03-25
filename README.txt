@@ -1,5 +1,6 @@
 The HTML5 Up "Striped" theme, modified for Pelican (http://getpelican.com)
-
+Plugins needed: neighbors 
+See it in action here: http://gnotc.com
 
 
 
