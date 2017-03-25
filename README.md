@@ -2,7 +2,7 @@ The HTML5 Up "[Striped](https://html5up.net/striped)" theme, modified for Pelica
 Plugins needed: [neighbors](https://github.com/getpelican/pelican-plugins/tree/master/neighbors).  
 See it in action at [G not C](http://gnotc.com). 
 
-![](/pelican-striped/screenshot.png )
+![](https://github.com/aroaminggeek/pelican-striped/blob/master/screenshot.png)
 
 Striped by HTML5 UP
 html5up.net | @ajlkn
