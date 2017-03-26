@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 {% block head %}
   {{ super() }}
-  {% if article.description %}
-    <meta name="description" content="{{article.summary}}" />
+  {% if article.headline %}
+    <meta name="description" content="{{article.headline}}" />
+    <meta name="summary" content="{{article.headline}}" />
   {% endif %}
 
   {% for tag in article.tags %}
