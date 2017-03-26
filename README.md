@@ -6,7 +6,7 @@ See it in action at [G not C](http://gnotc.com):
 ![](https://github.com/aroaminggeek/pelican-striped/blob/master/screenshot2.png)  
 Striped by HTML5 UP
 html5up.net | @ajlkn
-Free for personal and commercial use under the [CCA 3.0](https://creativecommons.org/licenses/by/3.0/) license (html5up.net/license)
+Free for personal and commercial use under the [CCA 3.0](https://creativecommons.org/licenses/by/3.0/) license ([html5up.net/license](html5up.net/license))
 
 
 And here's a new one: Striped, which features a clean, minimalistic design, styling for
