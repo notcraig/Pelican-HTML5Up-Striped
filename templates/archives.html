@@ -3,15 +3,15 @@
 <div id="content">
 <div class="inner">
 <article class="box post post-excerpt">
-<h2>Archives for {{ SITENAME }}</h2>
+
 
 <header> 
-{% for article in dates %}
-    <h2>{{ article.locale_date }}</h2>
-    <p><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></p>
-    <p>{{article.headline}}</p>
-{% endfor %}
+<h2>Archives for {{ SITENAME }}</h2>
 </header>
+{% for article in dates %}
+    
+    <h3><b>{{ article.date | strftime('%B %-d, %Y')  }}:</b> <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a><br>{{ article.headline }}</h3>
+{% endfor %}
 </article>
 </div>
 </div>
