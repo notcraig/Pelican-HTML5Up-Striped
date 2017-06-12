@@ -1,14 +1,8 @@
 {% extends "base.html" %}
 {% block head %}
   {{ super() }}
-  {% if article.headline %}
-    <meta name="description" content="{{article.headline}}" />
-    <meta name="summary" content="{{article.headline}}" />
-  {% endif %}
-
-  {% for tag in article.tags %}
-    <meta name="tags" content="{{tag}}" />
-  {% endfor %}
+	<meta name="description" content="{{ article.headline }}" />
+    	<meta name="summary" content="{{ article.headline }}" />
 
 {% endblock %}
 
@@ -24,8 +18,8 @@
                     <span class="date" datetime="{{ article.date.isoformat() }}"><span class="month">{{ article.date | strftime('%b')  }}</span> <span class="day">{{ article.date | strftime('%d')  }}</span> <span class="month"> {{ article.date | strftime('%Y')  }}</span></span>
                     <ul class="stats">
                                     <li><a href="mailto:?Subject={{article.title}}&Body=I%20saw%20this%20and%20thought%20of%20you!%20 {{ SITEURL }}/{{ article.url }}" class="icon fa-envelope">&nbsp;</a></li>
-                                    <li><a href="http://reddit.com/submit?url={{ SITEURL }}/{{ article.url }}&title=#{{article.title}}"" class="icon fa-reddit">&nbsp;</a></li>
-                                    <li><a href="https://twitter.com/share?url={{ SITEURL }}/{{ article.url }}&text=&hashtags=GnotC" class="icon fa-twitter">&nbsp;</a></li>
+                                    <li><a href="http://reddit.com/submit?url={{ SITEURL }}/{{ article.url }}&title={{article.title}}" class="icon fa-reddit">&nbsp;</a></li>
+                                    <li><a href="https://twitter.com/share?url={{ SITEURL }}/{{ article.url }}&amp;text={{ article.title }} - {{ article.headline }}" class="icon fa-twitter">&nbsp;</a></li>
                                     <li><a href="https://www.facebook.com/sharer.php?u={{ SITEURL }}/{{ article.url }}" class="icon fa-facebook">&nbsp;</a></li>
                                 </ul>
                 </div><!-- /.post-info -->
