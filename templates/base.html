@@ -28,75 +28,22 @@
         {% if TAG_FEED_RSS and tag %}
         <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
         {% endif %}
-        {% endblock head %}
-        <link rel="stylesheet" href="/theme/css/main.css" />
+         <link rel="stylesheet" href="/theme/css/main.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!--[if lte IE 8]><script src="/theme/js/ie/html5shiv.js"></script><![endif]-->
         <!--[if lte IE 8]><link rel="stylesheet" href="/theme/css/ie8.css" /><![endif]-->
+
+       
+ 
+        {% endblock head %}
+       
+
+  
 </head>
 
 <body>
-        <header id="banner" class="body">
-                <h1><a href="{{ SITEURL }}/">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
-        </header><!-- /#banner -->
-<!-- Sidebar -->
-            <div id="sidebar">
-
-                <!-- Logo -->
-                    <h1 id="logo"><a href="/">{{ SITENAME }}</a></h1>
-                    <!-- Text -->
-                    <section class="box text-style1">
-                        <div class="inner">
-                            <p>
-                                <strong>Ut scelerisque nec sapien ut sollicitudin:</strong><br />{{SITESUBTITLE}}
-                            </p>
-                        </div>
-                    </section>
-                <!-- Nav -->
-                    <nav id="nav">
-                        <ul>
-                            
-                            <li><a href="#">Nam euismod dui</a></li>
-                            <li><a href="#">Integer eget eros</a></li>
-                            <li><a href="#">Proin vehicula tortor</a></li>
-                            <li><a href="#">Vestibulum consectetur tellus</a></li>
-                        </ul>
-                    </nav>
-
-                <!-- Search -->
-                    <!-- <section class="box search">
-                        <form method="post" action="#">
-                            <input type="text" class="text" name="search" placeholder="Search" />
-                        </form>
-                    </section> -->
-
-                
-
-                <!-- Recent Posts -->
-                    <section class="box recent-posts">
-                        <header>
-                            <h2>Contact Me</h2>
-                        </header>
-                        <ul>
-                            <li><a class="icon fa-envelope" href="#"> eMail</a></li>
-                            <li><a class="icon fa-twitter" href="#"> Twitter</a></li>
-                            <li><a class="icon fa-facebook" href="#"> Facebook</a></li>
-                            <li><a class="icon fa-github" href="#"> Github</a></li>
-                            
-                        </ul>
-                    </section>
-
-
-
-                <!-- Copyright -->
-                    <ul id="copyright">
-                        <li>Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.</li>
-                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                        <li>Modified under a <a href="https://creativecommons.org/licenses/by/3.0/">CC:BY</a> license.</li>
-                    </ul>
-
-            </div><!-- /#menu -->
+       
+	{% include "sidebar.html" %}
         {% block content %}
         {% endblock %}
 <!-- /#contentinfo -->
