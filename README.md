@@ -1,5 +1,6 @@
 The HTML5 Up "[Striped](https://html5up.net/striped)" theme, modified for Pelican (http://getpelican.com).  
 Plugins needed: [neighbors](https://github.com/getpelican/pelican-plugins/tree/master/neighbors).  
+["Inflect"](https://pypi.python.org/pypi/inflect) is required for English Ordinal date.  
  
 ![](https://github.com/aroaminggeek/pelican-striped/blob/master/screenshot.png)  
 See it in action at [G not C](http://gnotc.com):  
