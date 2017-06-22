@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-
+import sys
+sys.path.append('.')
+from utils import filters
 AUTHOR = ''
 SITENAME = ''
 SITESUBTITLE = ''
@@ -37,5 +39,6 @@ DEFAULT_PAGINATION = 10
 #THEME = ''
 STATIC_PATHS = ['images']
 PLUGINS = ['neighbors']
+JINJA_FILTERS = { 'ordinal': filters.ordinal }
 
 
