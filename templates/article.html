@@ -15,7 +15,7 @@
                 <p>{{article.headline}}</p>
                 </header>
                 <div class="info">
-                    <span class="date" datetime="{{ article.date.isoformat() }}"><span class="month">{{ article.date | strftime('%b')  }}</span> <span class="day">{{ article.date | strftime('%d')  }}</span> <span class="month"> {{ article.date | strftime('%Y')  }}</span></span>
+                    <span class="date" datetime="{{ article.date.isoformat() }}"><span class="month">{{ article.date | strftime('%b')  }}</span> <span class="day">{{  article.date.day| ordinal() }}</span> <span class="month"> {{ article.date | strftime('%Y')  }}</span></span>
                     <ul class="stats">
                                     <li><a href="mailto:?Subject={{article.title}}&Body=I%20saw%20this%20and%20thought%20of%20you!%20 {{ SITEURL }}/{{ article.url }}" class="icon fa-envelope">&nbsp;</a></li>
                                     <li><a href="http://reddit.com/submit?url={{ SITEURL }}/{{ article.url }}&title={{article.title}}" class="icon fa-reddit">&nbsp;</a></li>
