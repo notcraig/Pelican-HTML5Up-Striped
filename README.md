@@ -3,7 +3,7 @@ Plugins needed: [neighbors](https://github.com/getpelican/pelican-plugins/tree/m
 ["Inflect"](https://pypi.python.org/pypi/inflect) is required for English Ordinal date.  
  
 ![](https://github.com/aroaminggeek/pelican-striped/blob/master/screenshot.png)  
-See it in action at [G not C](http://gnotc.com):  
+
 ![](https://github.com/aroaminggeek/pelican-striped/blob/master/screenshot2.png)  
 Striped by HTML5 UP
 html5up.net | @ajlkn
